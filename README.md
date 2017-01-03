@@ -7,4 +7,4 @@ Objetivo é a criação de 60 projetos em 60 dias utilizando a biblioteca React 
 
 | Day | Title      |
 | --- |:----------:|
-| 001 | [Hello World](day01/hello_world.go)|
+| 001 | [Hello World](day01/)|
