@@ -19,7 +19,7 @@ render(
 
 		<Content items={[
 			{link:"https://github.com/henriquejensen/60-days-of-React/tree/master/day01", text:"day 1 - Create a Hello World with react and config the enviroment to boot the project"},
-			{link:"https://github.com/henriquejensen/60-days-of-React/tree/master/day01", text: "day 2 - Create a Simple Website to show Component and Props in React"}
+			{link:"https://github.com/henriquejensen/60-days-of-React/tree/master/day02", text: "day 2 - Create a Simple Website to show Component and Props in React"}
 		]}/>
 
 		<Footer 
