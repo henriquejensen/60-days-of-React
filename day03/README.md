@@ -1,4 +1,4 @@
-# Day 1 - Post do Facebook - Component e Props
+# Day 3 - Post do Facebook - Component e Props
 
 ### Rodando o Projeto
 

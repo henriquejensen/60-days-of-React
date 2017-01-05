@@ -1,4 +1,4 @@
-# Day 1 - Simples Website - Component e Props
+# Day 2 - Simples Website - Component e Props
 
 ### Rodando o Projeto
 
