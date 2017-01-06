@@ -1,4 +1,4 @@
-# Day 3 - Post do Facebook - Component e Props
+# Day 3 - Post do Facebook - State e Handling Events
 
 ### Rodando o Projeto
 
