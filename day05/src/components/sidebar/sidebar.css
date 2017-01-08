@@ -1,0 +1,15 @@
+.mysidebar {
+    width: 240px;
+    position: fixed;
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    background: red;
+    color: white;
+}
+
+.mysidebar > li > a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
