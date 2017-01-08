@@ -1,15 +1,58 @@
 .mysidebar {
-    width: 240px;
+    overflow: auto;
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: 200;
+    background-color: #2e353d;
     position: fixed;
-    list-style: none;
-    display: inline-block;
+    top: 0px;
+    width: 240px;
+    height: 100%;
+    color: #e1ffff;
     margin: 0;
-    background: red;
-    color: white;
+    padding: 0;
+    list-style: none;
+}
+
+.mysidebar > img {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.mysidebar > li {
+    line-height: 35px;
+    position: relative;
+}
+
+.mysidebar > li:hover {
+    background: #4f5b69;
 }
 
 .mysidebar > li > a {
     color: white;
     cursor: pointer;
     text-decoration: none;
+}
+
+.mysidebar-body {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #181c20
+}
+
+.mysidebar-body > li:hover {
+    background-color: #020203
+}
+
+.mysidebar-body > li > a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 55px;
+}
+
+.fa {
+    padding: 0 20px;
 }

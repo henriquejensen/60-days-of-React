@@ -30,12 +30,12 @@ export default class Sidebar extends Component {
 
     render() {
         const items = [
-            {label: "Home", link: "/", submenu: []},
+            {label: "Home", link: "/", icon: "fa fa-home", submenu: []},
             {label: "About me", link: "", submenu: [
                 {label: "GitHub", link:"https://github.com/henriquejensen"},
                 {label: "Facebook", link: "https://facebook.com"}
             ]},
-            {label: "Teste Menu", link: "", submenu: [
+            {label: "Teste Menu 2", link: "", submenu: [
                 {label: "subitem 1", link: "#"},
                 {label: "subitem 2", link: "#"}
             ]},
@@ -43,9 +43,19 @@ export default class Sidebar extends Component {
 
         return (
             <ul className="mysidebar">
+            
+                <img src="http://www.expovaleab.com.br/images/facebook.png" width="100%" />
+
                 {items.map((item, index) => {
                     return (
                         <li key={index}>
+
+                            {item.submenu.length > 0 ?
+                                this.state.menusOpened.includes(index) ?
+                                    <i className="fa fa-arrow-up"/>
+                                : <i className="fa fa-arrow-down"/>
+                            : <i className={item.icon}/>}
+
                             {!item.link ? 
                                 <a onClick={() => this.onClickMenu(index)}> {item.label} </a>
                             : <a href={item.link}> {item.label} </a>}
@@ -58,7 +68,7 @@ export default class Sidebar extends Component {
                                                 <a href={subitem.link} >{subitem.label} </a>
                                             </li>
                                         )
-                                    })}
+                                    })}                                  
                                 </ul>
                             : ""}
                         </li>
