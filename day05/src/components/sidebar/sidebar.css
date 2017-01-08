@@ -15,9 +15,15 @@
 }
 
 .mysidebar > img {
-    width: 100%;
-    height: 50px;
+    width: 200px;
     margin: 10px 0;
+}
+
+.mysidebar > i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
 }
 
 .mysidebar > li {
@@ -53,6 +59,10 @@
     margin-left: 55px;
 }
 
-.fa {
+.mysidebar-icon {
     padding: 0 20px;
+}
+
+.margin-left-sidebar {
+    margin-left: -200px;
 }

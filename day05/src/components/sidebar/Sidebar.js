@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router";
 
 import './sidebar.css';
 
@@ -11,6 +12,7 @@ export default class Sidebar extends Component {
         }
 
         this.onClickMenu = this.onClickMenu.bind(this);
+        this.menuHambuguerClick = this.menuHambuguerClick.bind(this);
     }
 
     onClickMenu(key) {
@@ -28,44 +30,44 @@ export default class Sidebar extends Component {
         })
     }
 
-    render() {
-        const items = [
-            {label: "Home", link: "/", icon: "fa fa-home", submenu: []},
-            {label: "About me", link: "", submenu: [
-                {label: "GitHub", link:"https://github.com/henriquejensen"},
-                {label: "Facebook", link: "https://facebook.com"}
-            ]},
-            {label: "Teste Menu 2", link: "", submenu: [
-                {label: "subitem 1", link: "#"},
-                {label: "subitem 2", link: "#"}
-            ]},
-        ]
+    menuHambuguerClick() {
+        if(this.state.menusOpened.length > 0 ) {
+            this.setState({
+                menusOpened: []
+            })
+        }
 
+        this.props.menuHambuguerClick();
+    }
+
+    render() {
         return (
-            <ul className="mysidebar">
-            
+            <ul className={this.props.isSidebarOpened ? "mysidebar" : "mysidebar margin-left-sidebar"}>
+
+                <i className="fa fa-bars" aria-hidden="true" onClick={this.menuHambuguerClick}></i>
+                
                 <img src="http://www.expovaleab.com.br/images/facebook.png" width="100%" />
 
-                {items.map((item, index) => {
+                {this.props.items.map((item, index) => {
                     return (
                         <li key={index}>
 
                             {item.submenu.length > 0 ?
                                 this.state.menusOpened.includes(index) ?
-                                    <i className="fa fa-arrow-up"/>
-                                : <i className="fa fa-arrow-down"/>
+                                    <i className="fa fa-arrow-up mysidebar-icon"/>
+                                : <i className="fa fa-arrow-down mysidebar-icon"/>
                             : <i className={item.icon}/>}
 
                             {!item.link ? 
                                 <a onClick={() => this.onClickMenu(index)}> {item.label} </a>
-                            : <a href={item.link}> {item.label} </a>}
+                            : <Link to={item.link}> {item.label} </Link>}
 
                             {this.state.menusOpened.includes(index) ? 
                                 <ul className="mysidebar-body">
                                     {item.submenu.map((subitem,j) => {
                                         return (
                                             <li key={j}>
-                                                <a href={subitem.link} >{subitem.label} </a>
+                                                <Link to={subitem.link} >{subitem.label} </Link>
                                             </li>
                                         )
                                     })}                                  
