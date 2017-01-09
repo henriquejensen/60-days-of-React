@@ -1,0 +1,10 @@
+{
+    "questions": [
+        {"pos": 0, "title": "o que é o React", "options": [
+            "uma linguagem de programação", "uma IDE", "um compilador JavaScript", "uma biblioteca de interfaces"
+        ]},
+        {"pos": 1, "title": "o que é o Angular", "options": [
+            "uma linguagem de programação", "um framework JavaScript", "um compilador JavaScript", "uma biblioteca de interfaces"
+        ]}
+    ]
+}

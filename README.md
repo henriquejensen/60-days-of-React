@@ -11,3 +11,5 @@ Objetivo é a criação de 60 projetos em 60 dias utilizando a biblioteca React 
 | 002 | [Simples Website](day02/)|
 | 003 | [Post do Facebook](day03/)|
 | 004 | [Consumindo a API do Github com React+Redux+Axios](day04/)|
+| 005 | [Sidebar com react-router](day05/)|
+| 006 | [Jogo de perguntas e respostas](day06/)|
