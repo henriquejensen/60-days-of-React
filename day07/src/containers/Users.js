@@ -44,7 +44,7 @@ export default class Users extends Component {
         return (
             <Row>
                 <Col md={12}>
-                    <Table striped bordered condensed hover>
+                    <table>
                         <thead>
                         <tr>
                             <th>#</th>
@@ -66,7 +66,7 @@ export default class Users extends Component {
                             })}
 
                         </tbody>
-                    </Table>
+                    </table>
                 </Col>
 
                 <Modal

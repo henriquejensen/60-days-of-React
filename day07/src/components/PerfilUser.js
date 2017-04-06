@@ -43,6 +43,11 @@ export default class PerfilUser extends Component {
                 <Col md={4}>
                     <strong>Trabalho: </strong>{this.props.user.company.bs}
                 </Col>
+
+                <form>
+                    <input type="text" />
+                    <button className="btn btn-sm btn-info" type="submit">Enviar</button>
+                </form>
             </Col>
         )
     }

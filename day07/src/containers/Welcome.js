@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import superagent from "superagent";
 import { Col, Panel, Row } from "react-bootstrap";
 
+import Bar from "../components/Bar";
+
 import { URL_GET_USERS, URL_GET_PHOTOS } from "../constants";
 
 export default class Welcome extends Component {
@@ -48,6 +50,16 @@ export default class Welcome extends Component {
                             <strong>Fotos: </strong> {this.state.fotos.length}
                         </Col>
                     </Panel>
+                </Col>
+
+                <Col md={4}>
+                    <Bar title="Usuarios" />
+                </Col>
+                <Col md={4}>
+                    <Bar title="Fotos" />
+                </Col>
+                <Col md={4} >
+                    <Bar title="Consumo" />
                 </Col>
             </div>
         )

@@ -1,0 +1,14 @@
+.label-input {
+    padding-right: 10px;
+    font-weight: bold
+}
+
+.message-error {
+    color: red;
+    font-size: 12px
+}
+
+.my-input { 
+    padding: 3px;
+    margin: 2px 0px
+}
