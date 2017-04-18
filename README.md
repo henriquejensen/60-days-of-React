@@ -16,4 +16,4 @@ Objetivo é a criação de 60 projetos em 60 dias utilizando a biblioteca React 
 | 007 | [Dashboard com React](day07/)|
 | 008 | [Validação de formulário](day08/)|
 | 009 | [Configuração com Webpack 2](day09/)|
-| 010 | [Lista de usuários com novo React-Dom e PropTypes e eslint](day10/)|
+| 010 | [Lista de usuários com novo React-Router-Dom e PropTypes e eslint](day10/)|
