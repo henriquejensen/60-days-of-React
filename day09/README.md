@@ -1,4 +1,4 @@
-# Day 8 - Configuração com Webpack 2
+# Day 9 - Configuração com Webpack 2
 
 ### Rodando o Projeto
 
