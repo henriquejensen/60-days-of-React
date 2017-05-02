@@ -1,0 +1,4 @@
+.my-row-render:hover {
+    background-color: yellow !important;
+    color: red
+}
